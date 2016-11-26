@@ -1,0 +1,11 @@
+include ./../delay/index
+
+doctype html
+html
+  head
+    title!= props.title
+    script(src='/bundle/bundle.js')
+    link(href='/bundle/bundle.css')
+  body
+    h1!= props.title
+    +delay(props.effects.delay)
