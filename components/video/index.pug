@@ -1,0 +1,6 @@
+mixin video(props)
+  section(data-component='video')
+    h2!=props.title
+    video(autoplay, loop)
+      each s, index in props.sources
+        source()&attributes(s.attributes)

@@ -1,0 +1,6 @@
+[data-component='soundboard'] {
+  padding: 1em;
+  & video {
+    display: block;
+  }
+}

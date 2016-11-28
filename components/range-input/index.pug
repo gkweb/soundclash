@@ -1,4 +1,4 @@
 mixin range(props)
   div(data-component='range')
     h3!= props.title
-    input(class='range-input', type='range')&attributes(props.attributes)
+    input(class=`range-input ${props.id}`, type='range')&attributes(props.attributes)

@@ -1,0 +1,6 @@
+[data-component='video'] {
+  padding: 1em;
+  & video {
+    display: block;
+  }
+}

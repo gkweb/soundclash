@@ -1,11 +1,13 @@
 include ./../delay/index
+include ./../video/index
 
 doctype html
 html
   head
     title!= props.title
     script(src='/bundle/bundle.js')
-    link(href='/bundle/bundle.css')
+    link(href='/bundle/bundle.css', rel='stylesheet', type='text/css')
   body
     h1!= props.title
+    +video(props.backingTrack)
     +delay(props.effects.delay)

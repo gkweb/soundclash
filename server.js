@@ -11,6 +11,7 @@ app.set('views', path.join(__dirname, 'components'))
 // Expose publicly accesible assets dir
 app.use('/components', express.static(path.join(__dirname, 'components')))
 app.use('/bundle', express.static(path.join(__dirname, 'bundle')))
+app.use('/content', express.static(path.join(__dirname, 'content')))
 
 app.get('/', function (req, res) {
   res.render('app/index', content)

@@ -1,7 +1,7 @@
 include ./../range-input/index
 
 mixin delay(props)
-  div(data-component='delay')
+  section(data-component='delay')
     h3!= props.title
     each c, index in props.controls
       +range(c)

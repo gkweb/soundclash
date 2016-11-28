@@ -1,0 +1,6 @@
+mixin soundBoard(props)
+  li(data-component='sound-board-item')
+    h2!=props.title
+    audio(autoplay, loop)
+      each s, index in props.sources
+        source()&attributes(s.attributes)
